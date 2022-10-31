@@ -1,14 +1,12 @@
 .page__body {
-  min-height: 100vh;
+  min-width: $width-mobile;
   color: $basic-black;
   background-color: $basic-white;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-
-  &::before {
-    content: url(../icon/sprite.svg);
-  }
+  font-size: 14px;
+  line-height: 18px;
 }
 
 img {
@@ -31,7 +29,24 @@ img {
 }
 
 .container {
+  width: $width-mobile;
   margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding: 0 110px;
+  }
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
 }
 
 .button {

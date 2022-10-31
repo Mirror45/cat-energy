@@ -1,4 +1,4 @@
-const Key = "html/new";
+const Key = "cat-energy";
 const del = require("del");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass")(require("sass"));

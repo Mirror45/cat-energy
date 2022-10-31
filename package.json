@@ -1,21 +1,21 @@
 {
-  "name": "new",
-  "version": "2.0.0",
-  "description": "Шаблон",
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "Интернет-магазин фитнес еды для котиков",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mirror45/new.git"
+    "url": "git+https://github.com/Mirror45/cat-energy.git"
   },
   "author": "Mirror",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mirror45/new/issues"
+    "url": "https://github.com/Mirror45/cat-energy/issues"
   },
-  "homepage": "https://github.com/Mirror45/new#readme",
+  "homepage": "https://github.com/Mirror45/cat-energy#readme",
   "dependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
