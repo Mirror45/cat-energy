@@ -1,0 +1,7 @@
+.promo {
+  background: linear-gradient(
+      rgba($basic-green, 0.85) 302px,
+      $basic-white 302px
+    ),
+    no-repeat top center/contain url(../img/promo/index-background-mobile.webp);
+}

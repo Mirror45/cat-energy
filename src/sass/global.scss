@@ -1,12 +1,20 @@
 .page__body {
   min-width: $width-mobile;
-  color: $basic-black;
+  color: ($basic-black + 20);
   background-color: $basic-white;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $width-tablet) {
+    min-width: ($width-tablet + 30);
+  }
+
+  @media (min-width: $width-desktop) {
+    min-width: ($width-desktop + 110);
+  }
 }
 
 img {
@@ -50,13 +58,26 @@ img {
 }
 
 .button {
-  display: inline-block;
-  padding: 5px;
-  color: inherit;
-  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 280px;
+  color: $basic-white;
+  background-color: $basic-green;
   border: none;
-  font: inherit;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   text-decoration: none;
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    min-width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .input {
