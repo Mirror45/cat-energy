@@ -19,80 +19,96 @@
   <body class="page__body">
     <!-- svg[width=""height=""aria-label=""]>use[href="src/icon/img.svg#name"] -->
     <header class="main-header">
-      <nav class="main-nav main-nav--disabled container">
-        <div class="main-nav__logo logo">
-          <a href="index.html" class="logo__link">
-            <span class="visually-hidden">Логотип</span>
-            <svg width="34" height="38" aria-label="Logo" class="logo__icon">
-              <use href="src/icon/img.svg#logo"></use>
-            </svg>
-            <svg
-              width="101"
-              height="18"
-              aria-label="Cat Energy"
-              class="logo__cat-energy"
-            >
-              <use href="src/icon/img.svg#cat-energy"></use>
-            </svg>
-          </a>
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Переключатель</span>
-            <svg width="24" height="16" aria-label="Переключатель">
-              <use href="src/icon/img.svg#burger"></use>
-            </svg>
-          </button>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link main-nav__link--current">
-              Главная
+      <div class="main-header__wrapper container">
+        <nav class="main-nav main-nav--disabled">
+          <div class="main-nav__logo logo">
+            <a href="index.html" class="logo__link">
+              <span class="visually-hidden">Логотип</span>
+              <svg width="34" height="38" aria-label="Logo" class="logo__icon">
+                <use href="src/icon/img.svg#logo"></use>
+              </svg>
+              <svg
+                width="101"
+                height="18"
+                aria-label="Cat Energy"
+                class="logo__cat-energy"
+              >
+                <use href="src/icon/img.svg#cat-energy"></use>
+              </svg>
             </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+            <button class="main-nav__toggle">
+              <span class="visually-hidden">Переключатель</span>
+              <svg width="24" height="16" aria-label="Переключатель">
+                <use href="src/icon/img.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a
+                href="index.html"
+                class="main-nav__link main-nav__link--current"
+              >
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link"
+                >Каталог продукции</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page__main">
       <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
       <section class="promo">
-        <div class="container">
-          <h2 class="promo__title title">
-            Функциональное<br />
-            питание для котов
-          </h2>
-          <p class="promo__text">Занялся собой? Займись котом!</p>
-          <picture>
-            <source
-              srcset="
-                src/img/promo/index-can-desktop.webp    1x,
-                src/img/promo/index-can-desktop@2x.webp 2x
-              "
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="
-                src/img/promo/index-can-tablet.webp    1x,
-                src/img/promo/index-can-tablet@2x.webp 2x
-              "
-              media="(min-width: 770px)"
-            />
-            <img
-              width="280"
-              height="270"
-              src="src/img/promo/index-can-mobile.webp"
-              srcset="src/img/promo/index-can-mobile@2x.webp 2x"
-              alt="Корм Cat Energy"
-              class="pomo__img"
-            />
-          </picture>
-          <a href="form.html" class="promo__button button"
-            >Подобрать программу</a
-          >
+        <div class="promo__wrapper container">
+          <div class="promo__container">
+            <h2 class="promo__title title">
+              Функциональное<br />
+              питание для котов
+            </h2>
+            <p class="promo__description title">
+              Занялся собой? Займись котом!
+            </p>
+            <a href="form.html" class="promo__button button">
+              Подобрать программу
+            </a>
+          </div>
+          <div class="promo__picture">
+            <picture>
+              <source
+                srcset="
+                  src/img/promo/index-can-desktop.webp    1x,
+                  src/img/promo/index-can-desktop@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  src/img/promo/index-can-tablet.webp    1x,
+                  src/img/promo/index-can-tablet@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <img
+                width="280"
+                height="270"
+                src="src/img/promo/index-can-mobile.webp"
+                srcset="src/img/promo/index-can-mobile@2x.webp 2x"
+                alt="Корм Cat Energy"
+                class="promo__img"
+              />
+            </picture>
+            <a href="form.html" class="promo__button button">
+              Подобрать программу
+            </a>
+          </div>
         </div>
       </section>
     </main>

@@ -1,12 +1,22 @@
 .main-header {
   @media (min-width: $width-desktop) {
+    background-image: linear-gradient(
+      to right,
+      $basic-white 50%,
+      rgba($basic-green, 0.85) 50%
+    );
+  }
+}
+
+.main-header__wrapper {
+  @media (min-width: $width-desktop) {
     padding-top: 54px;
     background: linear-gradient(
         to right,
         $basic-white 50%,
         rgba($basic-green, 0.85) 50%
       ),
-      no-repeat 50% top / 50% url(../img/promo/index-background-desktop.webp);
+      no-repeat right top/50% url(../img/promo/index-background-desktop.webp);
   }
 }
 

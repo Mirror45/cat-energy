@@ -1,7 +1,109 @@
 .promo {
-  background: linear-gradient(
-      rgba($basic-green, 0.85) 302px,
-      $basic-white 302px
-    ),
-    no-repeat top center/contain url(../img/promo/index-background-mobile.webp);
+  text-align: center;
+  line-height: 1;
+  color: $basic-white;
+  background: linear-gradient(rgba($basic-green, 0.85) 50%, $basic-white 50%),
+    no-repeat top center/$width-mobile
+      url(../img/promo/index-background-mobile.webp);
+
+  @media (min-width: $width-tablet) {
+    text-align: left;
+    color: $basic-black;
+    background: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: linear-gradient(
+      to right,
+      $basic-white 50%,
+      rgba($basic-green, 0.85) 50%
+    );
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: $width-desktop) {
+    min-height: 585px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(
+        to right,
+        $basic-white 50%,
+        rgba($basic-green, 0.85) 50%
+      ),
+      no-repeat right top -113px/50% url(../img/promo/index-background-desktop.webp);
+  }
+}
+
+.promo__container {
+  @media (min-width: $width-tablet) {
+    padding-left: 82px;
+  }
+}
+
+.promo__title {
+  margin-bottom: 25px;
+  padding-top: 27px;
+  font-size: 36px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 40px;
+    padding-top: 64px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 111px;
+  }
+}
+
+.promo__description {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 52px;
+  }
+}
+
+.promo__button {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: inline-flex;
+  }
+}
+
+.promo__picture {
+  position: relative;
+
+  .promo__button {
+    display: inline-flex;
+
+    @media (min-width: $width-tablet) {
+      position: absolute;
+      top: 30px;
+      left: 82px;
+    }
+
+    @media (min-width: $width-desktop) {
+      display: none;
+    }
+  }
+}
+
+.promo__img {
+  width: 100%;
+
+  @media (min-width: $width-desktop) {
+    position: relative;
+    top: 32px;
+    left: -162px;
+    width: 552px;
+  }
 }
