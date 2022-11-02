@@ -1,4 +1,4 @@
-.main-header {
+.page__index .main-header {
   @media (min-width: $width-desktop) {
     background-image: linear-gradient(
       to right,
@@ -8,15 +8,24 @@
   }
 }
 
-.main-header__wrapper {
+.page__index .main-header__wrapper {
   @media (min-width: $width-desktop) {
-    padding-top: 54px;
     background: linear-gradient(
         to right,
         $basic-white 50%,
         rgba($basic-green, 0.85) 50%
       ),
       no-repeat right top/50% url(../img/promo/index-background-desktop.webp);
+  }
+}
+
+.main-header__wrapper {
+  @media (min-width: $width-tablet) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 54px;
   }
 }
 
@@ -81,7 +90,7 @@
 .main-nav__list {
   display: grid;
   row-gap: 44px;
-  margin: 0 0 22px;
+  margin: 0;
   padding: 0;
   list-style: none;
 
@@ -102,8 +111,16 @@
 .main-nav__item {
   display: none;
 
+  &:last-child {
+    margin-bottom: 17px;
+  }
+
   @media (min-width: $width-tablet) {
     display: block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -127,6 +144,16 @@
 
   @media (min-width: $width-tablet) {
     display: none;
+  }
+}
+
+.page__index .main-nav__link {
+  @media (min-width: $width-desktop) {
+    color: $basic-white;
+
+    &--current::before {
+      background-color: $basic-white;
+    }
   }
 }
 
@@ -167,12 +194,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    color: $basic-white;
     font-size: 20px;
     line-height: 30px;
-
-    &--current::before {
-      background-color: $basic-white;
-    }
   }
 }
