@@ -1,10 +1,9 @@
-.promo {
+.promo__wrapper {
   text-align: center;
   line-height: 1;
   color: $basic-white;
   background: linear-gradient(rgba($basic-green, 0.85) 50%, $basic-white 50%),
-    no-repeat top center/$width-mobile
-      url(../img/promo/index-background-mobile.webp);
+    no-repeat center top/contain url(../img/promo/index-background-desktop.webp);
 
   @media (min-width: $width-tablet) {
     text-align: left;
@@ -12,16 +11,6 @@
     background: none;
   }
 
-  @media (min-width: $width-desktop) {
-    background-image: linear-gradient(
-      to right,
-      $basic-white 50%,
-      rgba($basic-green, 0.85) 50%
-    );
-  }
-}
-
-.promo__wrapper {
   @media (min-width: $width-desktop) {
     min-height: 585px;
     display: grid;

@@ -1,13 +1,3 @@
-.page__index .main-header {
-  @media (min-width: $width-desktop) {
-    background-image: linear-gradient(
-      to right,
-      $basic-white 50%,
-      rgba($basic-green, 0.85) 50%
-    );
-  }
-}
-
 .page__index .main-header__wrapper {
   @media (min-width: $width-desktop) {
     background: linear-gradient(
