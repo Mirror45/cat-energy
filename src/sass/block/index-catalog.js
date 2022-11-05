@@ -5,7 +5,7 @@ if (!/catalog|form/.test(location.pathname)) {
     );
 
     for (let i of indexCatalog__icon) {
-      if (window.innerWidth > 1440 && i.dataset.scale < 2) {
+      if (window.innerWidth > 1439 && i.dataset.scale < 2) {
         i.style.width = `${i.getAttribute("width") * 2}px`;
         i.dataset.scale = 2;
       } else if (window.innerWidth < 1440 && i.dataset.scale > 1) {
