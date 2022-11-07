@@ -87,6 +87,19 @@ img {
     font-size: 20px;
     line-height: 20px;
   }
+
+  &--add {
+    color: $special-dark-grey;
+    background-color: $grey-back;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($special-dark-grey, 0.3);
+    }
+  }
 }
 
 .input {
