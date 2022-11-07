@@ -44,12 +44,8 @@
   .index-catalog__icon {
     display: block;
 
-    @media (min-width: $width-tablet) {
+    @media (min-width: $width-tablet) and (max-width: ($width-desktop - 1)) {
       display: none;
-    }
-
-    @media (min-width: $width-desktop) {
-      display: block;
     }
   }
 

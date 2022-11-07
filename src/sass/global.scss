@@ -98,3 +98,27 @@ img {
     color: currentColor;
   }
 }
+
+.page__title {
+  margin: 0;
+  padding: 27px 0 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 64px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 74px;
+  }
+}
+
+.page__form .page__main {
+  @media (min-width: $width-tablet) and (max-width: ($width-desktop - 1)) {
+    padding-left: 70px;
+  }
+}
