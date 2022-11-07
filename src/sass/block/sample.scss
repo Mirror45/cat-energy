@@ -281,7 +281,7 @@
   height: 34px;
   top: 50%;
   left: var(--width-sample-img);
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-17px);
   background-color: $basic-white;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
