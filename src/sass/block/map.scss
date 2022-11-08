@@ -24,6 +24,12 @@
   }
 }
 
+.page__catalog .map__wrapper {
+  @media (max-width: $width-desktop) {
+    background-color: $grey-back;
+  }
+}
+
 .map__title {
   font-size: 16px;
   line-height: 18px;

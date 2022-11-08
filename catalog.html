@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="src/css/normalize.css" />
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body page__catalog">
     <!-- svg[width=""height=""aria-label=""]>use[href="src/icon/img.svg#name"] -->
     <header class="main-header">
       <div class="main-header__wrapper container">
@@ -325,7 +325,7 @@
                 <use href="src/icon/img.svg#plus"></use>
               </svg>
             </button>
-            <h3 class="catalog__tagline title">Показать еще 100500 товаров</h3>
+            <h3 class="catalog__promo title">Показать еще 100500 товаров</h3>
             <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
             <a href="" class="catalog__button button button--add">
               Показать все
@@ -338,6 +338,57 @@
         <h2 class="extra-catalog__title title title--line">
           Дополнительные товары
         </h2>
+        <div class="extra-catalog__wrapper">
+          <ul class="extra-catalog__list">
+            <li class="extra-catalog__item">
+              <dl class="extra-catalog__dl">
+                <dt class="extra-catalog__dt title">Сахарозаменитель</dt>
+                <dd class="extra-catalog__dd">1 упаковка (100 г)</dd>
+                <dd class="extra-catalog__dd">200 Р.</dd>
+              </dl>
+              <a href="" class="extra-catalog__button button">Заказать</a>
+            </li>
+            <li class="extra-catalog__item">
+              <dl class="extra-catalog__dl">
+                <dt class="extra-catalog__dt title">Питьевая вода</dt>
+                <dd class="extra-catalog__dd">5 литров</dd>
+                <dd class="extra-catalog__dd">50 Р.</dd>
+              </dl>
+              <a href="" class="extra-catalog__button button">Заказать</a>
+            </li>
+            <li class="extra-catalog__item">
+              <dl class="extra-catalog__dl">
+                <dt class="extra-catalog__dt title">Молоко</dt>
+                <dd class="extra-catalog__dd">1 литр</dd>
+                <dd class="extra-catalog__dd">100 Р.</dd>
+              </dl>
+              <a href="" class="extra-catalog__button button">Заказать</a>
+            </li>
+            <li class="extra-catalog__item">
+              <dl class="extra-catalog__dl">
+                <dt class="extra-catalog__dt title">Витамины</dt>
+                <dd class="extra-catalog__dd">1 упаковка (30 г)</dd>
+                <dd class="extra-catalog__dd">300 Р.</dd>
+              </dl>
+              <a href="" class="extra-catalog__button button">Заказать</a>
+            </li>
+          </ul>
+          <div class="extra-catalog__promo">
+            <svg
+              class="extra-catalog__gift"
+              width="78"
+              height="80"
+              aria-label="Подарок"
+            >
+              <use href="src/icon/img.svg#gift"></use>
+            </svg>
+            <p class="extra-catalog__description">
+              Закажите все<br />
+              и получите чехол для<br />
+              кота в подарок!
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 

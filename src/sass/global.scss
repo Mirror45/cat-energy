@@ -55,6 +55,39 @@ img {
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: normal;
+
+  &--line {
+    position: relative;
+    display: inline-block;
+    padding-right: 22px;
+    background-color: $basic-white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: ($width-mobile - 20);
+      height: 2px;
+      background-color: $basic-green;
+      z-index: -1;
+
+      @media (min-width: $width-tablet) {
+        width: $width-tablet;
+        left: -30px;
+      }
+
+      @media (min-width: $width-desktop) {
+        width: $width-desktop;
+        left: -110px;
+      }
+    }
+
+    @media (min-width: $width-tablet) {
+      padding: 0 36px;
+    }
+  }
 }
 
 .button {
@@ -62,13 +95,13 @@ img {
   align-items: center;
   justify-content: center;
   height: 40px;
-  min-width: 280px;
+  min-width: 100%;
   color: $basic-white;
   background-color: $basic-green;
   border: none;
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -79,13 +112,6 @@ img {
 
   &:active {
     color: rgba($basic-white, 0.3);
-  }
-
-  @media (min-width: $width-tablet) {
-    min-width: 244px;
-    height: 54px;
-    font-size: 20px;
-    line-height: 20px;
   }
 
   &--add {

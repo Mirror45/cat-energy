@@ -62,9 +62,15 @@
 
 .promo__button {
   display: none;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $width-desktop) {
     display: inline-flex;
+    min-width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
