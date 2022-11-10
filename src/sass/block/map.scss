@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 28px 20px 26px;
-  background-color: $basic-white;
+  background-color: $grey-back;
 
   @media (min-width: $width-tablet) {
     padding: 62px 72px 51px;
@@ -21,13 +21,12 @@
     width: 570px;
     padding-left: 76px;
     padding-right: 89px;
+    background-color: $basic-white;
   }
 }
 
-.page__catalog .map__wrapper {
-  @media (max-width: $width-desktop) {
-    background-color: $grey-back;
-  }
+.page__index .map__wrapper {
+  background-color: $basic-white;
 }
 
 .map__title {
