@@ -67,6 +67,95 @@
 
     <main class="page__main container">
       <h1 class="page__title">Подбор программы</h1>
+
+      <form action="" class="form" method="post">
+        <p class="form__description title">
+          Заполните анкету, и мы подберем<br />
+          программу питания для вашего кота
+        </p>
+        <div class="form__wrapper title">
+          <label class="form__label form__label--text">
+            Имя:*
+            <input
+              type="text"
+              name="name"
+              id="form__name"
+              class="form__input input"
+              placeholder="Барсик"
+            />
+          </label>
+          <label class="form__label form__label--text">
+            Вес (кг):*
+            <input
+              type="text"
+              name="weight"
+              id="form__weight"
+              class="form__input input"
+              placeholder="7"
+            />
+          </label>
+          <label class="form__label form__label--text">
+            Возраст (лет):
+            <input
+              type="text"
+              name="age"
+              id="form__age"
+              class="form__input input"
+              placeholder="7"
+            />
+          </label>
+          <div class="form__extra">
+            <label class="form__label form__label--radio">
+              <input
+                type="radio"
+                name="radio"
+                id="form__weight-loss"
+                class="form__radio visually-hidden"
+                value="Похудение"
+                checked
+              />
+              <span></span>
+              Похудение
+            </label>
+            <label class="form__label form__label--radio">
+              <input
+                type="radio"
+                name="radio"
+                id="form__mass-gain"
+                class="form__radio visually-hidden"
+                value="Набор массы"
+              />
+              <span></span>
+              Набор массы
+            </label>
+            <label class="form__label form__label--radio">
+              <input
+                type="radio"
+                name="radio"
+                id="form__question"
+                class="form__radio visually-hidden"
+                value="Не знаю (Нужен ваш совет"
+              />
+              <span></span>
+              Не знаю (Нужен ваш совет)
+            </label>
+          </div>
+        </div>
+
+        <section class="contacts">
+          <h2 class="contacts__title title title--line">
+            Контактные данные (владельца кота)
+          </h2>
+        </section>
+
+        <section class="comment">
+          <h2 class="comment__title title title--line">Комментарий</h2>
+        </section>
+
+        <section class="extra-form">
+          <h2 class="extra-form title title--line">Дополнительно</h2>
+        </section>
+      </form>
     </main>
 
     <footer class="main-footer">
