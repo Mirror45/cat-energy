@@ -1,3 +1,12 @@
+.form {
+  font-size: 16px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .form__description {
   margin: 37px 0 39px;
   text-transform: uppercase;
@@ -10,55 +19,78 @@
 .form__wrapper {
   text-transform: uppercase;
 
+  @media (min-width: $width-desktop) {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.form__container {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+
   @media (min-width: $width-tablet) {
-    font-size: 20px;
-    line-height: 30px;
+    gap: 20px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
   }
 }
 
 .form__extra {
+  margin-bottom: 26px;
   display: grid;
   gap: 13px;
   padding: 20px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-}
 
-.form__label {
-  display: flex;
-  align-items: center;
-
-  &--text {
-    color: $special-dark-grey;
+  @media (min-width: $width-tablet) {
+    margin-bottom: 75px;
+    padding: 25px 30px;
   }
 
-  &--radio {
-    color: #222222;
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    border: 1px solid #d9d9d9;
   }
 }
 
-.form__radio {
-  + span {
-    position: relative;
-    margin-right: 15px;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #cdcdcd;
-    background-color: $basic-white;
-  }
+.form__radio:checked + .form__radio-span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background-color: $basic-green;
 
-  &:checked + span::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 13.5px;
-    height: 13.5px;
-    border-radius: 50%;
-    background-color: $basic-green;
+  @media (min-width: $width-tablet) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.form__radio-span {
+  position: relative;
+  margin-right: 15px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  background-color: $basic-white;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -74,38 +74,40 @@
           программу питания для вашего кота
         </p>
         <div class="form__wrapper title">
-          <label class="form__label form__label--text">
-            Имя:*
-            <input
-              type="text"
-              name="name"
-              id="form__name"
-              class="form__input input"
-              placeholder="Барсик"
-            />
-          </label>
-          <label class="form__label form__label--text">
-            Вес (кг):*
-            <input
-              type="text"
-              name="weight"
-              id="form__weight"
-              class="form__input input"
-              placeholder="7"
-            />
-          </label>
-          <label class="form__label form__label--text">
-            Возраст (лет):
-            <input
-              type="text"
-              name="age"
-              id="form__age"
-              class="form__input input"
-              placeholder="7"
-            />
-          </label>
+          <div class="form__container">
+            <label class="label">
+              Имя:*
+              <input
+                type="text"
+                name="name"
+                id="form__name"
+                class="form__input input"
+                placeholder="Барсик"
+              />
+            </label>
+            <label class="label">
+              Вес (кг):*
+              <input
+                type="text"
+                name="weight"
+                id="form__weight"
+                class="form__input input"
+                placeholder="7"
+              />
+            </label>
+            <label class="label">
+              Возраст (лет):
+              <input
+                type="text"
+                name="age"
+                id="form__age"
+                class="form__input input"
+                placeholder="7"
+              />
+            </label>
+          </div>
           <div class="form__extra">
-            <label class="form__label form__label--radio">
+            <label class="label--radio label">
               <input
                 type="radio"
                 name="radio"
@@ -114,10 +116,14 @@
                 value="Похудение"
                 checked
               />
-              <span></span>
+              <span
+                tabindex="0"
+                aria-label="radio"
+                class="form__radio-span"
+              ></span>
               Похудение
             </label>
-            <label class="form__label form__label--radio">
+            <label class="label--radio label">
               <input
                 type="radio"
                 name="radio"
@@ -125,18 +131,26 @@
                 class="form__radio visually-hidden"
                 value="Набор массы"
               />
-              <span></span>
+              <span
+                tabindex="0"
+                aria-label="radio"
+                class="form__radio-span"
+              ></span>
               Набор массы
             </label>
-            <label class="form__label form__label--radio">
+            <label class="label--radio label">
               <input
                 type="radio"
                 name="radio"
                 id="form__question"
                 class="form__radio visually-hidden"
-                value="Не знаю (Нужен ваш совет"
+                value="Не знаю (Нужен ваш совет)"
               />
-              <span></span>
+              <span
+                tabindex="0"
+                aria-label="radio"
+                class="form__radio-span"
+              ></span>
               Не знаю (Нужен ваш совет)
             </label>
           </div>
@@ -146,10 +160,54 @@
           <h2 class="contacts__title title title--line">
             Контактные данные (владельца кота)
           </h2>
+          <div class="contacts__wrapper title">
+            <label class="label">
+              E-mail:*
+              <input
+                id="contacts__email"
+                name="email"
+                type="email"
+                class="contacts__input input"
+                placeholder="kuklachev@gmail.com"
+              />
+              <svg
+                class="contacts__icon contacts__icon--email"
+                width="20"
+                height="14"
+                aria-label="Email"
+              >
+                <use href="src/icon/img.svg#email"></use>
+              </svg>
+            </label>
+            <label class="label">
+              Телефон:*
+              <input
+                id="contacts__tel"
+                name="tel"
+                type="tel"
+                class="contacts__input input"
+                placeholder="8 (960) 900-60-90"
+              />
+              <svg
+                class="contacts__icon"
+                width="20"
+                height="20"
+                aria-label="Phone"
+              >
+                <use href="src/icon/img.svg#phone"></use>
+              </svg>
+            </label>
+          </div>
         </section>
 
         <section class="comment">
           <h2 class="comment__title title title--line">Комментарий</h2>
+          <textarea
+            name="comment"
+            id="comment__textarea"
+            class="comment__textarea title"
+            placeholder="Расскажите обо всех повАдках кота"
+          ></textarea>
         </section>
 
         <section class="extra-form">
