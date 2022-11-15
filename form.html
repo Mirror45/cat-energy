@@ -211,7 +211,94 @@
         </section>
 
         <section class="extra-form">
-          <h2 class="extra-form title title--line">Дополнительно</h2>
+          <h2 class="extra-form__title title title--line">Дополнительно</h2>
+          <div class="extra-form__wrapper title">
+            <label class="label label--radio">
+              <input
+                value="Cахарозаменитель"
+                type="checkbox"
+                name="sweetener"
+                id="extra-form__sweetener"
+                class="extra-form__checkbox visually-hidden"
+                checked
+              />
+              <span class="extra-form__span-checkbox">
+                <svg
+                  class="extra-form__checked"
+                  width="26"
+                  height="26"
+                  aria-label="checked"
+                >
+                  <use href="src/icon/img.svg#checked"></use>
+                </svg>
+              </span>
+              Cахарозаменитель
+            </label>
+            <label class="label label--radio">
+              <input
+                value="Питьевая вода"
+                type="checkbox"
+                name="drinking-water"
+                id="extra-form__drinking-water"
+                class="extra-form__checkbox visually-hidden"
+              />
+              <span class="extra-form__span-checkbox">
+                <svg
+                  class="extra-form__checked"
+                  width="26"
+                  height="26"
+                  aria-label="checked"
+                >
+                  <use href="src/icon/img.svg#checked"></use>
+                </svg>
+              </span>
+              Питьевая вода
+            </label>
+            <label class="label label--radio">
+              <input
+                value="Молоко"
+                type="checkbox"
+                name="milk"
+                id="extra-form__milk"
+                class="extra-form__checkbox visually-hidden"
+              />
+              <span class="extra-form__span-checkbox">
+                <svg
+                  class="extra-form__checked"
+                  width="26"
+                  height="26"
+                  aria-label="checked"
+                >
+                  <use href="src/icon/img.svg#checked"></use>
+                </svg>
+              </span>
+              Молоко
+            </label>
+            <label class="label label--radio">
+              <input
+                value="Витамины"
+                type="checkbox"
+                name="vitamins"
+                id="extra-form__vitamins"
+                class="extra-form__checkbox visually-hidden"
+              />
+              <span class="extra-form__span-checkbox">
+                <svg
+                  class="extra-form__checked"
+                  width="26"
+                  height="26"
+                  aria-label="checked"
+                >
+                  <use href="src/icon/img.svg#checked"></use>
+                </svg>
+              </span>
+              Витамины
+            </label>
+            <button type="submit" class="extra-form__submit button">
+              отправить заявку
+            </button>
+            <p class="extra-form__description">* — Обязательные поля</p>
+          </div>
         </section>
       </form>
     </main>

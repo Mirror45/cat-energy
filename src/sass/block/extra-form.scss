@@ -1,0 +1,93 @@
+.extra-form__title {
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.extra-form__wrapper {
+  margin-bottom: 32px;
+  display: grid;
+  gap: 12px;
+  text-transform: uppercase;
+
+  .label {
+    color: $basic-black;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 72px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 82px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 104px;
+  }
+}
+
+.extra-form__checkbox:checked
+  + .extra-form__span-checkbox
+  .extra-form__checked {
+  display: block;
+}
+
+.extra-form__span-checkbox {
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.extra-form__checked {
+  display: none;
+}
+
+.extra-form__submit {
+  margin: 22px 0 9px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+    height: 52px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    grid-column: 1 / span 2;
+  }
+}
+
+.extra-form__description {
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+
+  @media (min-width: $width-tablet) {
+    align-self: center;
+    justify-self: start;
+    font-size: 16px;
+  }
+}
